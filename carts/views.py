@@ -225,5 +225,6 @@ def checkout(request, total=0, quantity=0, cart_items=None):
         "city":city,
         "state":state,
         "country":country,
+        "phone_number":phone_number,
     }
     return render(request, 'store/checkout.html', context)
