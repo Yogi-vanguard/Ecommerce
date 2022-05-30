@@ -201,12 +201,29 @@ def checkout(request, total=0, quantity=0, cart_items=None):
         grand_total = total + tax
     except ObjectDoesNotExist:
         pass
-
+    
+    first_name = request.user.first_name
+    last_name = request.user.last_name
+    email = request.user.email
+    phone_number = request.user.phone_number
+    address_line_1 = request.user.userprofile.address_line_1
+    address_line_2 = request.user.userprofile.address_line_2
+    city = request.user.userprofile.city
+    state = request.user.userprofile.state
+    country = request.user.userprofile.country
     context = {
         "total": total,
         "quantity": quantity,
         "cart_items": cart_items,
         "tax": tax,
         "grand_total": grand_total,
+        "first_name":first_name,
+        "last_name":last_name,
+        "email":email,
+        "address_line_1":address_line_1,
+        "address_line_2":address_line_2,
+        "city":city,
+        "state":state,
+        "country":country,
     }
     return render(request, 'store/checkout.html', context)
