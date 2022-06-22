@@ -12,9 +12,9 @@ EMAIL_USE_TLS= if you want then True else False
 
 ## Task != Done
 <!-- ignore-task-list-start -->
-- [x] User Profile Bug
-- [x] Document
-- [x] Enhancement
+- [ ] User Profile Bug
+- [ ] Document
+- [ ] Enhancement
 <!-- ignore-task-list-end -->
 
 
