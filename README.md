@@ -10,8 +10,6 @@ EMAIL_USE_TLS= if you want then True else False
 <!-- ignore-task-list-end -->
 
 
-
-
 ## Task != Done
 <!-- ignore-task-list-start -->
 - [x] Bug
