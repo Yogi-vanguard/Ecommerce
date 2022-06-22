@@ -7,6 +7,8 @@ EMAIL_HOST_PASSWORD= Your Password\
 EMAIL_USE_TLS= if you want then True else False
 
 
+
+
 **Schema That I have build**
 
 
